@@ -1,4 +1,4 @@
-package com.example.demo.dominio.entidade;
+package com.example.demo.dominio.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -7,11 +7,12 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
+@Table(name = "usuarios")
 @Setter
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-public class Usuario {
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
