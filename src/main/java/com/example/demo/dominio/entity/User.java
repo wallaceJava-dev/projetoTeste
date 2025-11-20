@@ -7,11 +7,11 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
-@Table(name = "usuarios")
 @Setter
-@Entity
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
+@Table(name = "usuarios")
 public class User {
 
     @Id
